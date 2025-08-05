@@ -2,13 +2,28 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
-import controllers.EstudianteController;
 import models.Estudiante;
+import validaciones.ValidTest;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        System.out.println("Método A -> Ordenar Promedio: ");
+        System.out.println(ordenarPorPromedio);
 
+        System.out.println("Metodo B -> ClasificarPorcentaje: ");
+        System.out.println(clasificarPorPorcentaje);
+
+        System.out.println("Metodo C -> Estudiantes Destacados: ");
+
+        System.out.println(obtenerEstudiantesDestacados);
+
+        System.out.println("Metodo D -> Buscar Nombre: ");
+        System.out.println(buscarPorNombre);
+
+        System.out.println("Clasificación por porcentaje de caracteres únicos: ");
+        System.out.println(TreeSet<Estudiante> ordenarPorPromedio(List<Estudiante> estudiantes));
     }
 
     static List<Estudiante> crearEstudiantes() {
@@ -62,5 +77,4 @@ public class App {
                 new Estudiante("Samuel Torres", "3535353535", Arrays.asList(7.5, 8.0, 7.5, 8.0, 7.5, 8.0)),
                 new Estudiante("Mónica Andrade", "3636363636", Arrays.asList(9.0, 9.5, 9.0, 9.5, 9.0, 9.5)));
     }
-
 }
